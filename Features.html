@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-d7245f89-8bdc-4810-9995-b001f9c47974/styles.css">
+<script src="_ds/organic-d7245f89-8bdc-4810-9995-b001f9c47974/_ds_bundle.js"></script>
+<style>
+body{margin:0}
+a{color:var(--color-accent-700);text-decoration:none}
+a:hover{color:var(--color-accent)}
+.line{display:block}
+.email-form{display:flex;gap:12px;align-items:stretch;max-width:420px}
+.email-form input{flex:1;min-height:36px}
+.email-form button{min-height:36px}
+@media (max-width:880px){.fb{grid-template-columns:1fr!important}.fb-fig{order:-1;justify-self:start!important}}
+</style>
+</helmet>
+
+<nav class="nav" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,5vw,72px)">
+  <div style="display:flex;align-items:center;gap:10px">
+    <img src="ref/icon.png" alt="" style="width:30px;height:30px;object-fit:contain;border-radius:10px"/>
+    <span class="nav-brand">Thrift</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:28px">
+    <a href="index.html" style="font-size:15px;color:var(--color-text)">Home</a>
+    <a href="Features.html" style="font-size:15px;font-weight:600">Features</a>
+    <a href="Privacy.html" style="font-size:15px;color:var(--color-text)">Privacy</a>
+    <button type="button" class="btn btn-primary" onclick="document.getElementById('email-form').scrollIntoView({behavior:'smooth'})">Get notified</button>
+  </div>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+
+  <section style="padding:calc(2.5*28px) 0 calc(1.5*28px)">
+    <span style="display:block;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 20px">Under the hood</span>
+    <h1 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(36px,4.6vw,58px);line-height:1.15;margin:0 0 0 -0.028em">What Thrift actually does with your money's paper trail</h1>
+    <p style="font-size:17px;line-height:28px;max-width:60ch;margin:28px 0 0;color:var(--color-text)">Five things it handles so you don't have to — each one grounded in how the app is actually built, not marketing gloss.</p>
+  </section>
+
+  <section class="fb" style="display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px clamp(24px,5vw,80px);align-items:center;padding:calc(2*28px) 0">
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:400;font-size:15px;margin:0 0 10px;color:var(--color-accent-700);letter-spacing:0.04em">01 — CAPTURE</p>
+      <h2 style="font-family:var(--font-heading);font-weight:400;font-size:28px;line-height:1.25;margin:0">Real-time and historical, in one pipeline</h2>
+      <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:20px 0 0;max-width:52ch">A new bank or UPI SMS is parsed the moment it arrives — amount, merchant, transaction type — and either written straight to your ledger or, if it's uncertain, staged for your review. The same pipeline runs a manual scan across your inbox history, so switching to Thrift doesn't mean losing last month's data.</p>
+    </div>
+    <div class="fb-fig" style="width:min(280px,100%);justify-self:end;border-radius:calc(2*var(--radius-lg));overflow:hidden;box-shadow:var(--shadow-md)"><img src="ref/07_transactions_list.jpg" alt="Transactions list screenshot" style="display:block;width:100%"/></div>
+  </section>
+
+  <section class="fb" style="display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px clamp(24px,5vw,80px);align-items:center;padding:calc(2*28px) 0">
+    <div class="fb-fig" style="width:min(280px,100%);border-radius:calc(2*var(--radius-lg));overflow:hidden;box-shadow:var(--shadow-md)"><img src="ref/06_dashboard.jpg" alt="Dashboard screenshot" style="display:block;width:100%"/></div>
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:400;font-size:15px;margin:0 0 10px;color:var(--color-accent-700);letter-spacing:0.04em">02 — DASHBOARD</p>
+      <h2 style="font-family:var(--font-heading);font-weight:400;font-size:28px;line-height:1.25;margin:0">One screen, this month's whole picture</h2>
+      <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:20px 0 0;max-width:52ch">Total spend, a month-over-month trend line, a category breakdown, and anything still waiting for review — surfaced together instead of scattered across bank statements and app notifications.</p>
+    </div>
+  </section>
+
+  <section class="fb" style="display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px clamp(24px,5vw,80px);align-items:center;padding:calc(2*28px) 0">
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:400;font-size:15px;margin:0 0 10px;color:var(--color-accent-700);letter-spacing:0.04em">03 — BUDGET</p>
+      <h2 style="font-family:var(--font-heading);font-weight:400;font-size:28px;line-height:1.25;margin:0">Caps that actually get enforced</h2>
+      <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:20px 0 0;max-width:52ch">Set a limit per category and one overall monthly cap. Thrift notifies you once at 80% and once at 100% — no spam, no repeat pings — and freezes each past month into a read-only snapshot so your history never quietly changes underneath you.</p>
+    </div>
+    <div class="fb-fig" style="width:min(280px,100%);justify-self:end;border-radius:calc(2*var(--radius-lg));overflow:hidden;box-shadow:var(--shadow-md)"><img src="ref/10_budget.jpg" alt="Budget screen screenshot" style="display:block;width:100%"/></div>
+  </section>
+
+  <section style="padding:calc(2*28px) 0">
+    <p style="font-family:var(--font-heading);font-weight:400;font-size:15px;margin:0 0 10px;color:var(--color-accent-700);letter-spacing:0.04em">04 — REVIEW &amp; RULES</p>
+    <h2 style="font-family:var(--font-heading);font-weight:400;font-size:28px;line-height:1.25;margin:0 0 24px">Teach it once, it stops asking</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+      <div class="card"><p class="card-kicker">Review queue</p><p class="card-body">Low-confidence matches and every income deposit wait for your approval before they count as spending.</p></div>
+      <div class="card"><p class="card-kicker">Merchant rules</p><p class="card-body">Tell it once that a merchant is always "Groceries," and every future match is categorized on arrival.</p></div>
+      <div class="card"><p class="card-kicker">Exclusion rules</p><p class="card-body">Recurring noise — OTPs, promos, balance alerts — gets auto-archived before it ever reaches your queue.</p></div>
+    </div>
+  </section>
+
+  <section style="padding:calc(2*28px) 0 calc(3*28px)">
+    <p style="font-family:var(--font-heading);font-weight:400;font-size:15px;margin:0 0 10px;color:var(--color-accent-700);letter-spacing:0.04em">05 — SECURITY &amp; DATA</p>
+    <h2 style="font-family:var(--font-heading);font-weight:400;font-size:28px;line-height:1.25;margin:0 0 24px">Nothing to leak, because nothing leaves</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+      <div class="card"><p class="card-kicker">App lock</p><p class="card-body">Fingerprint, face, or PIN over the whole app — re-locks every time it's backgrounded.</p></div>
+      <div class="card"><p class="card-kicker">Encrypted backups</p><p class="card-body">Manual or nightly backups, passphrase-encrypted, saved wherever you choose. Restoring merges rather than replaces.</p></div>
+      <div class="card"><p class="card-kicker">CSV export</p><p class="card-body">Your full ledger, exportable anytime, with dates and sources explained in a comment preamble.</p></div>
+    </div>
+    <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:28px 0 0;max-width:60ch">Full detail on what's collected and why is in the <a href="Privacy.html" style="text-decoration:underline">privacy policy</a>.</p>
+  </section>
+
+</div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px) calc(2*28px)">
+  <div style="background:var(--color-accent-2-100);border-radius:calc(2*var(--radius-lg));padding:calc(1.5*28px) clamp(24px,4vw,64px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+    <h3 style="font-family:var(--font-heading);font-weight:400;font-size:24px;margin:0">See it land in your inbox first.</h3>
+    <form class="email-form" id="email-form" action="https://formspree.io/f/xppaaogo" method="POST">
+      <input class="input" type="email" name="email" placeholder="you@example.com" aria-label="Email address" required/>
+      <button type="submit" class="btn btn-primary">Get notified</button>
+    </form>
+  </div>
+</div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px) 56px">
+  <footer style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;line-height:28px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">
+    <span>Thrift — an on-device expense tracker.</span>
+    <div style="display:flex;gap:24px">
+      <a href="index.html">Home</a>
+      <a href="Privacy.html">Privacy</a>
+      <a href="mailto:dev.thriftapp@gmail.com">dev.thriftapp@gmail.com</a>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>
