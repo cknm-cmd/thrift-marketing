@@ -365,8 +365,10 @@ a:hover{color:var(--color-accent)}
       <h3 style="font-family:var(--font-heading);font-weight:400;font-size:26px;margin:0">Your bank already knows. Now you will too.</h3>
       <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:16px 0 0;max-width:52ch">Be first to know when Thrift lands on Android.</p>
     </div>
-    <form class="email-form" id="email-form" action="https://formspree.io/f/xppaaogo" method="POST">
-      <input type="hidden" name="_next" value="https://thriftapp.in/thanks.html"/>
+    <form class="email-form" id="email-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="25229268-ddf7-48ee-a067-a550b23c0f14"/>
+      <input type="hidden" name="subject" value="New Thrift alpha signup"/>
+      <input type="hidden" name="redirect" value="https://thriftapp.in/thanks.html"/>
       <input class="input" type="email" name="email" placeholder="you@example.com" aria-label="Email address" required="required"/>
       <button type="submit" class="btn btn-primary">Notify me</button>
     </form>
