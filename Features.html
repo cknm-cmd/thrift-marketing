@@ -275,7 +275,7 @@ a:hover{color:var(--color-accent)}
   <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
   <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">&#9776;</label>
   <div class="nav-links">
-    <a href="index.html" style="font-size:15px;color:var(--color-text)">Home</a>
+    <a href="/" style="font-size:15px;color:var(--color-text)">Home</a>
     <a href="Features.html" style="font-size:15px;font-weight:600">Features</a>
     <a href="Privacy.html" style="font-size:15px;color:var(--color-text)">Privacy</a>
     <button type="button" class="btn btn-primary" onclick="document.getElementById('email-form').scrollIntoView({behavior:'smooth'})">Get notified</button>
@@ -288,6 +288,13 @@ a:hover{color:var(--color-accent)}
     <span style="display:block;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 20px">Under the hood</span>
     <h1 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(36px,4.6vw,58px);line-height:1.15;margin:0 0 0 -0.028em">What Thrift actually does with your money's paper trail</h1>
     <p style="font-size:17px;line-height:28px;max-width:60ch;margin:28px 0 0;color:var(--color-text)">Five things it handles so you don't have to — each one grounded in how the app is actually built, not marketing gloss.</p>
+  </section>
+
+  <section style="padding:0 0 calc(2*28px);display:flex;justify-content:center">
+    <video controls="controls" preload="metadata" poster="ref/06_dashboard.jpg" style="width:auto;max-width:100%;max-height:70vh;display:block;border-radius:calc(2*var(--radius-lg));box-shadow:var(--shadow-lg)">
+      <source src="ref/thrift-intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
 
   <section class="fb" style="display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px clamp(24px,5vw,80px);align-items:center;padding:calc(2*28px) 0">
@@ -344,7 +351,7 @@ a:hover{color:var(--color-accent)}
   <div style="background:var(--color-accent-2-100);border-radius:calc(2*var(--radius-lg));padding:calc(1.5*28px) clamp(24px,4vw,64px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
     <h3 style="font-family:var(--font-heading);font-weight:400;font-size:24px;margin:0">See it land in your inbox first.</h3>
     <form class="email-form" id="email-form" action="https://formspree.io/f/xppaaogo" method="POST">
-      <input class="input" type="email" name="email" placeholder="you@example.com" aria-label="Email address" required/>
+      <input class="input" type="email" name="email" placeholder="you@example.com" aria-label="Email address" required="required"/>
       <button type="submit" class="btn btn-primary">Get notified</button>
     </form>
   </div>
@@ -354,7 +361,7 @@ a:hover{color:var(--color-accent)}
   <footer style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;line-height:28px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">
     <span>Thrift — an on-device expense tracker.</span>
     <div style="display:flex;gap:24px">
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       <a href="Privacy.html">Privacy</a>
       <a href="mailto:dev.thriftapp@gmail.com">dev.thriftapp@gmail.com</a>
     </div>

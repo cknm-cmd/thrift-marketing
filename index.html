@@ -277,7 +277,7 @@ a:hover{color:var(--color-accent)}
   <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
   <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">&#9776;</label>
   <div class="nav-links">
-    <a href="index.html" style="font-size:15px;font-weight:600">Home</a>
+    <a href="/" style="font-size:15px;font-weight:600">Home</a>
     <a href="Features.html" style="font-size:15px;color:var(--color-text)">Features</a>
     <a href="Privacy.html" style="font-size:15px;color:var(--color-text)">Privacy</a>
     <button type="button" class="btn btn-primary" onclick="document.getElementById('email-form').scrollIntoView({behavior:'smooth'})">Get notified</button>
@@ -359,7 +359,7 @@ a:hover{color:var(--color-accent)}
       <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:16px 0 0;max-width:52ch">Be first to know when Thrift lands on Android.</p>
     </div>
     <form class="email-form" id="email-form" action="https://formspree.io/f/xppaaogo" method="POST">
-      <input class="input" type="email" name="email" placeholder="you@example.com" aria-label="Email address" required/>
+      <input class="input" type="email" name="email" placeholder="you@example.com" aria-label="Email address" required="required"/>
       <button type="submit" class="btn btn-primary">Notify me</button>
     </form>
   </div>
