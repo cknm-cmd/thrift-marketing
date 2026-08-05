@@ -253,16 +253,28 @@ a:hover{color:var(--color-accent)}
 .email-form{display:flex;gap:12px;align-items:stretch;max-width:420px}
 .email-form input{flex:1;min-height:36px}
 .email-form button{min-height:36px}
+.nav-toggle-checkbox{display:none}
+.nav-toggle-label{display:none;cursor:pointer;font-size:24px;line-height:1;padding:4px;color:var(--color-text)}
+.nav-links{display:flex;align-items:center;gap:28px}
 @media (max-width:880px){.fb{grid-template-columns:1fr!important}.fb-fig{order:-1;justify-self:start!important}}
+@media (max-width:680px){
+  .nav-toggle-label{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:16px;background:var(--color-bg);padding:20px clamp(20px,5vw,72px) 28px;box-shadow:var(--shadow-md);z-index:20}
+  .nav-toggle-checkbox:checked ~ .nav-links{display:flex}
+  .nav-links .btn{width:100%}
+  h1{font-size:clamp(30px,8vw,40px)!important}
+}
 </style>
 </helmet>
 
-<nav class="nav" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,5vw,72px)">
+<nav class="nav" style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,5vw,72px)">
   <div style="display:flex;align-items:center;gap:10px">
     <img src="ref/icon.png" alt="" style="width:30px;height:30px;object-fit:contain;border-radius:10px"/>
     <span class="nav-brand">Thrift</span>
   </div>
-  <div style="display:flex;align-items:center;gap:28px">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">&#9776;</label>
+  <div class="nav-links">
     <a href="index.html" style="font-size:15px;color:var(--color-text)">Home</a>
     <a href="Features.html" style="font-size:15px;font-weight:600">Features</a>
     <a href="Privacy.html" style="font-size:15px;color:var(--color-text)">Privacy</a>

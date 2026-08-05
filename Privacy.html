@@ -249,15 +249,26 @@ textarea.input { min-height: 90px; resize: vertical; }
 body{margin:0}
 a{color:var(--color-accent-700);text-decoration:none}
 a:hover{color:var(--color-accent)}
+.nav-toggle-checkbox{display:none}
+.nav-toggle-label{display:none;cursor:pointer;font-size:24px;line-height:1;padding:4px;color:var(--color-text)}
+.nav-links{display:flex;align-items:center;gap:28px}
+@media (max-width:680px){
+  .nav-toggle-label{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:16px;background:var(--color-bg);padding:20px clamp(20px,5vw,72px) 28px;box-shadow:var(--shadow-md);z-index:20}
+  .nav-toggle-checkbox:checked ~ .nav-links{display:flex}
+  h1{font-size:clamp(28px,8vw,36px)!important}
+}
 </style>
 </helmet>
 
-<nav class="nav" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,5vw,72px)">
+<nav class="nav" style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,5vw,72px)">
   <div style="display:flex;align-items:center;gap:10px">
     <img src="ref/icon.png" alt="" style="width:30px;height:30px;object-fit:contain;border-radius:10px"/>
     <span class="nav-brand">Thrift</span>
   </div>
-  <div style="display:flex;align-items:center;gap:28px">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">&#9776;</label>
+  <div class="nav-links">
     <a href="index.html" style="font-size:15px;color:var(--color-text)">Home</a>
     <a href="Features.html" style="font-size:15px;color:var(--color-text)">Features</a>
     <a href="Privacy.html" style="font-size:15px;font-weight:600">Privacy</a>
