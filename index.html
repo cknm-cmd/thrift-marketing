@@ -74,6 +74,9 @@
   --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--color-bg);
   color: var(--color-text);
@@ -284,7 +287,7 @@ a:hover{color:var(--color-accent)}
     <a href="/" style="font-size:15px;font-weight:600">Home</a>
     <a href="Features.html" style="font-size:15px;color:var(--color-text)">Features</a>
     <a href="Privacy.html" style="font-size:15px;color:var(--color-text)">Privacy</a>
-    <button type="button" class="btn btn-primary" onclick="document.getElementById('email-form').scrollIntoView({behavior:'smooth'})">Get notified</button>
+    <a href="#email-form" class="btn btn-primary" style="color:var(--color-bg)">Get notified</a>
   </div>
 </nav>
 
@@ -298,7 +301,7 @@ a:hover{color:var(--color-accent)}
     </h1>
     <p style="font-size:17px;line-height:28px;max-width:58ch;margin:38px 0 0;color:var(--color-text)">Thrift reads your bank and UPI SMS right on your phone and turns every debit into a categorized transaction — no bank linking, no manual entry, no spreadsheets. Nothing ever leaves your device.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
-      <button type="button" class="btn btn-primary" onclick="document.getElementById('email-form').scrollIntoView({behavior:'smooth'})">Get notified at launch</button>
+      <a href="#email-form" class="btn btn-primary">Get notified at launch</a>
       <a href="Features.html" class="btn btn-ghost">See how it works</a>
     </div>
   </section>

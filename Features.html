@@ -74,6 +74,9 @@
   --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--color-bg);
   color: var(--color-text);
@@ -282,7 +285,7 @@ a:hover{color:var(--color-accent)}
     <a href="/" style="font-size:15px;color:var(--color-text)">Home</a>
     <a href="Features.html" style="font-size:15px;font-weight:600">Features</a>
     <a href="Privacy.html" style="font-size:15px;color:var(--color-text)">Privacy</a>
-    <button type="button" class="btn btn-primary" onclick="document.getElementById('email-form').scrollIntoView({behavior:'smooth'})">Get notified</button>
+    <a href="#email-form" class="btn btn-primary" style="color:var(--color-bg)">Get notified</a>
   </div>
 </nav>
 
