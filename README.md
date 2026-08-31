@@ -1,6 +1,6 @@
-# Thrift Marketing Website
+# Catchspend Marketing Website
 
-The landing page and feature showcase for the Thrift expense tracker app — an on-device SMS-based transaction extraction tool.
+The landing page and feature showcase for the Catchspend expense tracker app — an on-device SMS-based transaction extraction tool.
 
 ## What's in here
 
@@ -28,10 +28,10 @@ No backend or database setup needed — Formspree handles everything.
 
 ## Deploying to GitHub Pages
 
-1. **Create a new repo** called `thrift-marketing` (or similar)
+1. **Create a new repo** called `catchspend-marketing` (or similar)
 2. **Push these files** to the `main` branch
 3. **Enable Pages** in repo settings → Settings → Pages → Source: Deploy from branch → `main` branch, root folder
-4. Your site will be live at `https://yourusername.github.io/thrift-marketing`
+4. Your site will be live at `https://yourusername.github.io/catchspend-marketing`
 
 All links and assets are relative, so they'll work on Pages without modification.
 
@@ -65,8 +65,8 @@ Forms capture email only and submit directly to Formspree.
 
 ### Change branding
 - Update icon in `ref/icon.png` (keep at ~100px square)
-- Update app name "Thrift" in the nav
-- Update contact email in footer (`dev.thriftapp@gmail.com`)
+- Update app name "Catchspend" in the nav
+- Update contact email in footer (`appdev.nkc@gmail.com`)
 
 ### Change colors
 Edit the CSS variables at the top of `_ds/organic-*/styles.css`:
@@ -112,4 +112,4 @@ HTML is plain text. Edit headlines, body copy, and button labels directly in the
 
 ## Contact
 
-For pre-launch signups or questions: dev.thriftapp@gmail.com
+For pre-launch signups or questions: appdev.nkc@gmail.com
